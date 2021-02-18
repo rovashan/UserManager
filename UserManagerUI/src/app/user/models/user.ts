@@ -3,4 +3,5 @@ export class User {
     name: string;
     surname: string;
     dateOfBirth: Date;
+    age?: number;
 }

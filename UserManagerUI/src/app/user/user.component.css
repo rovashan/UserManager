@@ -1,0 +1,10 @@
+.container {
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+
+.add-user-btn {
+    float: right;    
+    margin-bottom: 10px;
+}
