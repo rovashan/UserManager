@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    min-height: 300px;
+    min-width: 500px;
+}

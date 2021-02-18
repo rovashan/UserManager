@@ -14,6 +14,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { UserAddComponent } from './user/user-add/user-add.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { MatInputModule } from '@angular/material/input';
     MatListModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

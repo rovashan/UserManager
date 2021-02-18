@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
+import { UserAddComponent } from './user-add/user-add.component';
 
 @Component({
   selector: 'app-user',
@@ -8,12 +10,16 @@ import { Router } from '@angular/router';
 })
 export class UserComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-  addUserScreen() {
-    this.router.navigate(['/user-add']);
-  }
+  openDialog() {
+    const dialogConfig = new MatDialogConfig();
+    this.dialog.open(UserAddComponent, dialogConfig)
+                .afterClosed().subscribe( data => {
+                  console.log('closed', data);
+                });
+}
 }
